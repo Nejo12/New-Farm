@@ -6,10 +6,10 @@ const Message = () => {
     <MessageContainer>
       <MessageTitle>100% Local </MessageTitle>
       <MessageInfo>
-        Your food should not travel too far to get to you fresh. With the farm,
+        Your food should not travel too far to get to you fresh. With The Farm,
         you can have every fresh produce grown close to you. Nutritious produce
         from all around the world, right there close to you while it still
-        lives.
+        alive.
       </MessageInfo>
     </MessageContainer>
   );

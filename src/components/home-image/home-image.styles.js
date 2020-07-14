@@ -5,6 +5,10 @@ export const HomeImageContainer = styled.div`
     width: 100vw;
     text-align: center;
     overflow: hidden;
+    a {
+      color: green;
+      font-size: 1rem;
+    }
   }
 
   .slides {
@@ -13,11 +17,6 @@ export const HomeImageContainer = styled.div`
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-
-    /*
-  scroll-snap-points-x: repeat(300px);
-  scroll-snap-type: mandatory;
-  */
   }
   .slides::-webkit-scrollbar {
     width: 10px;
@@ -34,7 +33,7 @@ export const HomeImageContainer = styled.div`
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     margin-right: 50px;
     border-radius: 10px;
     background: #eee;
@@ -92,65 +91,6 @@ export const HomeImageContainer = styled.div`
   .slider > a:focus {
     background: #000;
   }
-
-  /* Don't need button navigation */
-  /* @supports (scroll-snap-type) {
-    .slider > a {
-      display: none;
-    }
-  } */
-
-  /* html,
-  body {
-    height: 100%;
-    overflow: hidden;
-  }
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, #74abe2, #5563de);
-    font-family: 'Ropa Sans', sans-serif;
-  } */
-
-  /* background-color: lightgreen; */
-  /* position: relative; */
-  /* background: url('https://i.ibb.co/WpX3Vzc/windmill.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%, cover;
-  background-position: center, center;
-  width: 100%;
-  height: 100vh;
-  animation: animateHomeImage 1s;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0.4;
-  }
-
-  @keyframes animateHomeImage {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @media screen and (max-width: 900px) {
-    height: 400px;
-  }
-
-  @media screen and (max-width: 600px) {
-    background-image: none;
-    background-color: darkgreen;
-  } */
 `;
 
 export const HomeImageContent = styled.div`
