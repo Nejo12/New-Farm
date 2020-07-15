@@ -31,6 +31,10 @@ export const FooterContact = styled.div`
   margin: auto;
   text-align: start;
   font-size: 0.7rem;
+
+  p {
+    cursor: pointer;
+  }
 `;
 
 export const FooterFollowUs = styled.div`
@@ -39,7 +43,8 @@ export const FooterFollowUs = styled.div`
   text-align: center;
 
   img {
-    padding: 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
   }
 `;
 
@@ -47,4 +52,9 @@ export const FooterName = styled.div`
   margin: auto;
   text-align: end;
   font-size: 12px;
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
 `;

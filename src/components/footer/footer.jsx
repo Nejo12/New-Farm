@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import {
   FooterContainer,
@@ -27,12 +28,14 @@ const Footer = () => (
       </div>
     </FooterFollowUs>
     <FooterName>
-      &copy; The Farm, Gabriel Olaniyi 2020 {'  '}
-      <span className='loader__dot'>.</span>
-      {'  '}
-      <span className='loader__dot'>.</span>
-      {'  '}
-      <span className='loader__dot'>.</span>
+      <a target='_blank' href='https://gox.netlify.app/'>
+        &copy; The Farm, Gabriel Olaniyi 2020 {'  '}
+        <span className='loader__dot'>.</span>
+        {'  '}
+        <span className='loader__dot'>.</span>
+        {'  '}
+        <span className='loader__dot'>.</span>
+      </a>
     </FooterName>
   </FooterContainer>
 );
