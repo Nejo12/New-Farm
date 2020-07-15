@@ -1,9 +1,10 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 const GlobalButtonStyle = css`
   color: #fff;
   background: green;
   border: none;
+  border-radius: 4px;
 
   &:hover {
     background: #fff;
@@ -52,7 +53,7 @@ export const CustomButtonStyles = styled.button`
   letter-spacing: 0.5px;
   line-height: 50px;
   text-transform: uppercase;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;

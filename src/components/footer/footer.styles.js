@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledFooter = styled.div`
   background: #292929;
   color: #fff;
   width: 100%;
-  height: 20px;
-  position: fixed;
+  height: 20rem;
+  position: relative;
   bottom: 0;
-  z-index: 99;
+  /* z-index: 99; */
 
   @keyframes blink {
     50% {

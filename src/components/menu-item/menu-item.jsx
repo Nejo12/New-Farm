@@ -19,6 +19,8 @@ const MenuItem = ({ title, imageUrl, info, history, match, linkUrl }) => (
     <MenuItemContent>
       <MenuItemTitle>{title} </MenuItemTitle>
       <p>{info}</p>
+      <br />
+      <br />
       <CustomButton
         text='VIEW MORE'
         callback={() => history.push(`${match.url}${linkUrl}`)}

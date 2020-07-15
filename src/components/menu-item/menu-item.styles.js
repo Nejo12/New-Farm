@@ -10,7 +10,7 @@ export const MenuItemContainer = styled.div`
   }
 
   width: 100%;
-  height: 450px;
+  height: 500px;
   align-items: center;
   overflow: hidden;
 
@@ -33,7 +33,6 @@ export const MenuItemContent = styled.div`
 
   button {
     margin: 0 auto;
-    border-radius: 4px;
   }
 
   @media screen and (max-width: 400px) {
