@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CollectionPreviewContainerStyles = styled.div`
   display: flex;
@@ -12,8 +12,12 @@ export const CollectionPreviewContainerStyles = styled.div`
 
 export const CollectionPreviewTitleStyles = styled.h1`
   font-size: 28px;
-  margin-bottom: 25px;
+  font-weight: 100;
+  margin-top: 25px;
   cursor: pointer;
+  text-align: center;
+  color: green;
+  padding: 0;
 
   &:hover {
     color: grey;

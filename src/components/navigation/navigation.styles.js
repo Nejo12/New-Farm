@@ -16,7 +16,7 @@ export const StyledNaviContent = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
-  color: #fff;
+  color: green;
 
   img {
     width: 40px;
@@ -72,7 +72,7 @@ export const OptionsContainer = styled.div`
 
 export const OptionLink = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: greenyellow;
   padding: 0 10px;
   cursor: pointer;
 `;

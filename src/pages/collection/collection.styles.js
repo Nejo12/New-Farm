@@ -1,14 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CollectionContainerStyles = styled.div`
   display: flex;
   flex-direction: column;
+  margin: 10rem 0 5rem 0;
 `;
 
 export const CollectionTitleStyles = styled.h2`
   font-size: 38px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   text-transform: capitalize;
+  font-weight: 100;
 `;
 
 export const CollectionItemsStyles = styled.div`
