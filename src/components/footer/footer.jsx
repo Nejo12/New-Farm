@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import {
   FooterContainer,
@@ -20,15 +19,34 @@ const Footer = () => (
     <FooterFollowUs>
       <h3>FOLLOW US</h3>
       <div className='social'>
-        <img src='https://img.icons8.com/color/48/000000/facebook-circled.png' />
-        <img src='https://img.icons8.com/color/48/000000/instagram-new.png' />
-        <img src='https://img.icons8.com/color/48/000000/linkedin-circled.png' />
-        <img src='https://img.icons8.com/color/48/000000/whatsapp.png' />
-        <img src='https://img.icons8.com/color/48/000000/pinterest--v1.png' />
+        <img
+          src='https://img.icons8.com/color/48/000000/facebook-circled.png'
+          alt='mediaIcon'
+        />
+        <img
+          src='https://img.icons8.com/color/48/000000/instagram-new.png'
+          alt='mediaIcon'
+        />
+        <img
+          src='https://img.icons8.com/color/48/000000/linkedin-circled.png'
+          alt='mediaIcon'
+        />
+        <img
+          src='https://img.icons8.com/color/48/000000/whatsapp.png'
+          alt='mediaIcon'
+        />
+        <img
+          src='https://img.icons8.com/color/48/000000/pinterest--v1.png'
+          alt='mediaIcon'
+        />
       </div>
     </FooterFollowUs>
     <FooterName>
-      <a target='_blank' href='https://gox.netlify.app/'>
+      <a
+        href='https://gox.netlify.app/'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
         &copy; The Farm, Gabriel Olaniyi 2020 {'  '}
         <span className='loader__dot'>.</span>
         {'  '}

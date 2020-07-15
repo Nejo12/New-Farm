@@ -4,7 +4,7 @@ import { MessageContainer, MessageTitle, MessageInfo } from './message.styles';
 const CustomMessage = ({ title, message }) => {
   return (
     <MessageContainer>
-      <MessageTitle>{title} </MessageTitle>
+      <MessageTitle>{title}</MessageTitle>
       <MessageInfo>{message}</MessageInfo>
     </MessageContainer>
   );
