@@ -12,15 +12,16 @@ export const NewsLetterContainer = styled.div`
 `;
 
 export const NewsLetterContent = styled.div`
+  /* margin: 5rem 2rem; */
   display: flex;
-  justify-content: space-between;
-  margin: 5rem 2rem;
+  margin: auto;
+  /* justify-content: space-around; */
 
   h1 {
     max-width: 45rem;
     color: #fff;
-    padding: 0rem 1rem;
-    margin: 1rem 2rem;
+    padding: 0.5rem;
+    margin: 1rem 5rem;
   }
 `;
 

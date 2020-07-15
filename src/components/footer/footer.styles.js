@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
-export const StyledFooter = styled.div`
-  background: #292929;
-  color: #fff;
+export const FooterContainer = styled.div`
+  background: #fff;
+  color: #000;
   width: 100%;
-  height: 20rem;
+  height: 15rem;
   position: relative;
   bottom: 0;
-  /* z-index: 99; */
+  display: flex;
+  justify-content: space-evenly;
 
   @keyframes blink {
     50% {
@@ -26,9 +27,24 @@ export const StyledFooter = styled.div`
   }
 `;
 
-export const FooterNameStyles = styled.div`
-  margin: 2px 48px 0 0;
-  text-align: end;
+export const FooterContact = styled.div`
+  margin: auto;
+  text-align: start;
+  font-size: 0.7rem;
+`;
+
+export const FooterFollowUs = styled.div`
+  margin: auto;
   letter-spacing: 0.3em;
+  text-align: center;
+
+  img {
+    padding: 0.5rem;
+  }
+`;
+
+export const FooterName = styled.div`
+  margin: auto;
+  text-align: end;
   font-size: 12px;
 `;
