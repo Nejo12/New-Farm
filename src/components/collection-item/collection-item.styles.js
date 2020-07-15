@@ -13,13 +13,6 @@ export const CollectionItemContainer = styled.div`
   border: 1px solid silver;
   border-radius: 4px;
 
-  /* &:hover {
-    button {
-      opacity: 0.85;
-      display: flex;
-    }
-  } */
-
   @media screen and (max-width: 900px) {
     width: 40vw;
   }
@@ -34,9 +27,6 @@ export const AddButton = styled(CustomButton)`
   opacity: 0.7;
   margin-top: 5rem;
   border-radius: 4px;
-  /* position: absolute;
-  top: 255px; */
-  /* display: none; */
 
   @media screen and (max-width: 1380px) {
     display: flex;

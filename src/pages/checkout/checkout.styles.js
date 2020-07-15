@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CheckoutContainerStyles = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px auto 0;
+  margin: 7rem auto;
   width: 55%;
   min-height: 90vh;
 

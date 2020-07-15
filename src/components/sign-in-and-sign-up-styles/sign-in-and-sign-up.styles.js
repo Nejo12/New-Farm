@@ -10,8 +10,7 @@ export const SignInStyles = styled.div`
   background-size: cover;
   height: 100vh;
   padding: 0;
-  /* margin-bottom: -20px; */
-  margin: 2.5rem auto;
+  margin: 2rem auto;
   overflow: auto;
 `;
 

@@ -12,10 +12,8 @@ export const NewsLetterContainer = styled.div`
 `;
 
 export const NewsLetterContent = styled.div`
-  /* margin: 5rem 2rem; */
   display: flex;
   margin: auto;
-  /* justify-content: space-around; */
 
   h1 {
     max-width: 45rem;
