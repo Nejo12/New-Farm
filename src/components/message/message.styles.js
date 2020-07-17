@@ -13,10 +13,11 @@ export const MessageTitle = styled.p`
   font-family: 'Patrick Hand', cursive;
   font-size: 10vmin;
   text-align: center;
+  margin-bottom: 0rem !important;
 `;
 
 export const MessageInfo = styled.p`
-  font-size: 3vmin;
+  font-size: 1rem;
   margin: 1rem auto;
   padding: 1rem;
   width: 70%;
