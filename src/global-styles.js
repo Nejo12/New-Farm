@@ -6,12 +6,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    /* since nav is fixed with height of 70px */
-    ${'' /* margin: 70px 0 0 0 ;  */}
     margin: 0 ; 
     padding: 0;
     font-family: 'Quicksand', sans-serif;
-  }
-
- 
+  } 
 `;

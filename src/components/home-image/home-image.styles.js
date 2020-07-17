@@ -1,13 +1,19 @@
 import styled from 'styled-components';
 
 export const HomeImageContainer = styled.div`
+  /* border: 9px solid yellow; */
+  /* width: 100%; */
+
   .slider {
-    width: 100vw;
     text-align: center;
     overflow: hidden;
+    /* border: 9px solid pink; */
   }
 
   .slides {
+    /* border: 9px solid green; */
+
+    /* width: 100vw; */
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -27,10 +33,10 @@ export const HomeImageContainer = styled.div`
   .slides > div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 100vw;
+    width: 100%;
     height: 99vh;
     margin-right: 5px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background: rgba(0, 0, 0, 0.7);
     transform-origin: center center;
     position: relative;
@@ -50,17 +56,14 @@ export const HomeImageContainer = styled.div`
   }
 `;
 
-export const HomeImageContent = styled.div`
-  padding: 20px;
-`;
-
 export const HomeImageText = styled.div`
   position: absolute;
-  min-height: 100px;
+  min-height: 10rem;
+  min-width: 90vmin;
   color: #fff;
   margin: 20px;
   padding: 10px 30px;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: start;
@@ -71,7 +74,7 @@ export const HomeImageText = styled.div`
 
   span {
     color: green;
-    font-size: 3rem;
+    font-size: 5vmin;
     text-shadow: 2px 2px #fff;
   }
 
@@ -89,5 +92,9 @@ export const HomeImageText = styled.div`
       color: lightgreen;
       font-size: 2rem;
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 90%;
   }
 `;

@@ -6,4 +6,8 @@ export const StyledDirectory = styled.div`
   width: 100%;
   flex-wrap: wrap;
   padding: 2rem;
+
+  @media screen and (max-width: 720px) {
+    padding: 0;
+  }
 `;

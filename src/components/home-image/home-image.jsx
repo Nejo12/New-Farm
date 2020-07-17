@@ -30,8 +30,7 @@ const HomeImage = () => (
             </h1>
             <p>
               We tend to build farm for individual, public and private
-              organisations.
-              <br /> Satisfaction is our main goal.
+              organisations. Satisfaction is our main goal.
             </p>
           </HomeImageText>
         </div>
@@ -42,9 +41,8 @@ const HomeImage = () => (
               Compliments given to the <span>Farm</span>
             </h1>
             <p>
-              The smile of on our customer is all we need to keep us going.{' '}
-              <br /> Five years on it and our ratings on worldwide rating is
-              still 5 stars.
+              The smile of on our customer is all we need to keep us going. Five
+              years on it and our ratings on worldwide rating is still 5 stars.
             </p>
           </HomeImageText>
         </div>
@@ -55,10 +53,9 @@ const HomeImage = () => (
               One at a time on the <span>Farm</span>
             </h1>
             <p>
-              Believe it or not, we take special care on every seed / plant
-              <br />
-              We believe the special care is important for the love and care to
-              be appreciated.
+              Believe it or not, we take special care on every seed / plant We
+              believe the special care is important for the love and care to be
+              appreciated.
             </p>
           </HomeImageText>
         </div>
@@ -69,9 +66,8 @@ const HomeImage = () => (
               Customer support from the <span>Farm</span>
             </h1>
             <p>
-              Our experieinced Field Engineers are always ready to assist.
-              <br />
-              Both on the field and off the field.
+              Our experieinced Field Engineers are always ready to assist. Both
+              on the field and off the field.
             </p>
           </HomeImageText>
         </div>

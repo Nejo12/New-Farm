@@ -10,7 +10,7 @@ const Newsletter = () => {
   return (
     <NewsLetterContainer>
       <NewsLetterContent>
-        <h1>Sign up for updates and more through our Weekly Newsletter</h1>
+        <p>Sign up for updates and more through our Weekly Newsletter</p>
         <NewsLetterForm>
           <input type='email' placeholder='Enter your email address' />
           <CustomButton text='Submit' />

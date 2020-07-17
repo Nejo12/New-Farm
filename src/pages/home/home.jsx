@@ -10,13 +10,7 @@ import Newsletter from '../../components/newsletter/newsletter';
 const Home = () => (
   <StyledHome>
     <HomeImage />
-    <CustomMessage
-      title='100% Local. 100% Fresh.'
-      message=' Your food should not travel too far to get to you fresh. With The Farm,
-        you can have every fresh produce grown close to you. Nutritious produce
-        from all around the world, right there close to you while it still
-        alive.'
-    />
+    <CustomMessage />
     <Directory />
     <Newsletter />
   </StyledHome>
