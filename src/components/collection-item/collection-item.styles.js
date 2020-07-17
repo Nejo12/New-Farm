@@ -12,6 +12,7 @@ export const CollectionItemContainer = styled.div`
   padding: 0.5rem;
   border: 1px solid silver;
   border-radius: 4px;
+  background: #deeadf;
 
   @media screen and (max-width: 900px) {
     width: 40vw;

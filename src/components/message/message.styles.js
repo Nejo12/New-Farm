@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 export const MessageContainer = styled.div`
   margin: 5rem;
+
+  @media screen and (max-width: 900px) {
+    margin: 1rem;
+    text-align: center;
+  }
 `;
 
 export const MessageTitle = styled.p`
@@ -12,12 +17,12 @@ export const MessageTitle = styled.p`
 
 export const MessageInfo = styled.p`
   font-size: 3vmin;
-  margin: auto;
+  margin: 1rem auto;
   padding: 1rem;
   width: 70%;
   text-align: justify;
 
   @media screen and (max-width: 900px) {
-    width: 90%;
+    width: 100%;
   }
 `;

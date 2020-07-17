@@ -1,20 +1,11 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
-  background: #fff;
-  color: #000;
-  width: 100%;
-  height: 15rem;
-  position: relative;
-  bottom: 0;
+  min-height: 15rem;
   display: flex;
-  justify-content: space-evenly;
+  margin: auto;
+  flex-wrap: wrap;
 
-  @keyframes blink {
-    50% {
-      color: transparent;
-    }
-  }
   .loader__dot {
     display: inline;
     animation: 1s blink infinite;
@@ -25,15 +16,23 @@ export const FooterContainer = styled.div`
   .loader__dot:nth-child(3) {
     animation-delay: 500ms;
   }
+
+  @keyframes blink {
+    50% {
+      color: transparent;
+    }
+  }
 `;
 
 export const FooterContact = styled.div`
   margin: auto;
-  text-align: start;
+  /* text-align: center; */
   font-size: 0.7rem;
+  display: flex;
 
   p {
     cursor: pointer;
+    padding: 0 0.5rem;
   }
 `;
 
@@ -46,12 +45,17 @@ export const FooterFollowUs = styled.div`
     margin: 0.5rem;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 720px) {
+    h3 {
+      display: none;
+    }
+  }
 `;
 
 export const FooterName = styled.div`
   margin: auto;
-  text-align: end;
-  font-size: 12px;
+  font-size: 0.7rem;
 
   a {
     text-decoration: none;
