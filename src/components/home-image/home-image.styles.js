@@ -1,19 +1,15 @@
 import styled from 'styled-components';
 
 export const HomeImageContainer = styled.div`
-  /* border: 9px solid yellow; */
   /* width: 100%; */
+  /* background-color: rgba(0, 0, 0, 0.9); */
 
   .slider {
     text-align: center;
     overflow: hidden;
-    /* border: 9px solid pink; */
   }
 
   .slides {
-    /* border: 9px solid green; */
-
-    /* width: 100vw; */
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -36,8 +32,6 @@ export const HomeImageContainer = styled.div`
     width: 100%;
     height: 99vh;
     margin-right: 5px;
-    /* border-radius: 10px; */
-    background: rgba(0, 0, 0, 0.7);
     transform-origin: center center;
     position: relative;
     display: flex;
@@ -53,6 +47,14 @@ export const HomeImageContainer = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
   }
 `;
 
