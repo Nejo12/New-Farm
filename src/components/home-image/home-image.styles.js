@@ -65,7 +65,7 @@ export const HomeImageText = styled.div`
   color: #fff;
   margin: 20px;
   padding: 10px 30px;
-  top: 70%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: start;
@@ -87,12 +87,18 @@ export const HomeImageText = styled.div`
 
   @media screen and (max-width: 900px) {
     min-height: 20px;
-    bottom: 20px;
+    margin: auto;
     padding: 10px;
+    h1 {
+      font-size: 1.5rem;
+    }
 
     span {
       color: lightgreen;
       font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
     }
   }
 
