@@ -1,0 +1,16 @@
+.blink {
+  position: absolute;
+  top: 50%;
+  right: 3.5rem;
+  z-index: 99999;
+
+  animation: blinker 1.6s linear infinite;
+  color: green;
+  font-size: 30px;
+  font-weight: bold;
+}
+@keyframes blinker {
+  0% {
+    opacity: 0;
+  }
+}

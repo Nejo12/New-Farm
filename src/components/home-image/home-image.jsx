@@ -5,6 +5,7 @@ import seed from '../../media/seed.jpg';
 import fe from '../../media/fe.jpg';
 
 import { HomeImageContainer, HomeImageText } from './home-image.styles';
+import Blinky from '../blinky/blinky';
 
 const HomeImage = () => (
   <HomeImageContainer>
@@ -12,6 +13,7 @@ const HomeImage = () => (
       <div className='slides'>
         <div id='slide-1'>
           <img src='https://i.ibb.co/WpX3Vzc/windmill.jpg' alt='img1' />
+          <Blinky text='scroll >' />
           <div className='overlay'>
             <HomeImageText>
               <h1>
@@ -26,6 +28,8 @@ const HomeImage = () => (
         </div>
         <div id='slide-2'>
           <img src={joes} alt='img2' />
+          <Blinky text='>' />
+
           <div className='overlay'>
             <HomeImageText>
               <h1>
@@ -40,6 +44,8 @@ const HomeImage = () => (
         </div>
         <div id='slide-3'>
           <img src={sam} alt='sams-img' />
+          <Blinky text='>' />
+
           <div className='overlay'>
             <HomeImageText>
               <h1>
@@ -55,6 +61,8 @@ const HomeImage = () => (
         </div>
         <div id='slide-4'>
           <img src={seed} alt='seed-img' />
+          <Blinky text='>' />
+
           <div className='overlay'>
             <HomeImageText>
               <h1>
