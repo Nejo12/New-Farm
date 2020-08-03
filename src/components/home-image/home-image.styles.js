@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 export const HomeImageContainer = styled.div`
-  /* width: 100%; */
-  /* background-color: rgba(0, 0, 0, 0.9); */
-
   .slider {
     text-align: center;
     overflow: hidden;
@@ -55,6 +52,18 @@ export const HomeImageContainer = styled.div`
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
+  }
+  .dot {
+    cursor: pointer;
+    height: 0.3rem;
+    width: 1.5rem;
+    margin: 0 1rem;
+    border-radius: 4px;
+    background-color: green;
+    display: inline-block;
+    position: relative;
+    bottom: 4rem;
+    z-index: 2;
   }
 `;
 
