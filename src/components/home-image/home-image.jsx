@@ -4,7 +4,7 @@ import sam from '../../media/sam.jpg';
 import seed from '../../media/seed.jpg';
 import fe from '../../media/fe.jpg';
 
-import { HomeImageContainer, HomeImageText } from './home-image.styles';
+import { HomeImageContainer, HomeImageText, HomeTitle, HomeSubTitle } from './home-image.styles';
 
 const HomeImage = () => {
   return (
@@ -15,80 +15,80 @@ const HomeImage = () => {
             <img src='https://i.ibb.co/WpX3Vzc/windmill.jpg' alt='img1' />
             <div className='overlay'>
               <HomeImageText>
-                <h1>
+                <HomeTitle>
                   Welcome to the <span>Farm</span>
-                </h1>
-                <p>
-                  With an ever incresing demand for fresh produce, we supply the
-                  best and freshest farm produce around the world.{' '}
-                </p>
+                </HomeTitle>
+                <HomeSubTitle>
+                  With an ever increasing demand for fresh produce, we supply the
+                  best and freshest farm produce around the world.{ ' ' }
+                </HomeSubTitle>
               </HomeImageText>
             </div>
           </div>
           <div id='slide-2'>
-            <img src={joes} alt='img2' />
+            <img src={ joes } alt='img2' />
 
             <div className='overlay'>
               <HomeImageText>
-                <h1>
+                <HomeTitle>
                   We help build the <span>Farm</span>
-                </h1>
-                <p>
+                </HomeTitle>
+                <HomeSubTitle>
                   We are obliged to build farm for individual, public and
                   private organisations. Customer satisfaction is our main goal.
-                </p>
+                </HomeSubTitle>
               </HomeImageText>
             </div>
           </div>
           <div id='slide-3'>
-            <img src={sam} alt='sams-img' />
+            <img src={ sam } alt='sams-img' />
 
             <div className='overlay'>
               <HomeImageText>
-                <h1>
+                <HomeTitle>
                   Compliments given to the <span>Farm</span>
-                </h1>
-                <p>
+                </HomeTitle>
+                <HomeSubTitle>
                   The smile of on our customer is all we need to keep us going.
                   Five years on it and our ratings on worldwide rating is still
                   5 stars.
-                </p>
+                </HomeSubTitle>
               </HomeImageText>
             </div>
           </div>
           <div id='slide-4'>
-            <img src={seed} alt='seed-img' />
+            <img src={ seed } alt='seed-img' />
 
             <div className='overlay'>
               <HomeImageText>
-                <h1>
+                <HomeTitle>
                   One at a time on the <span>Farm</span>
-                </h1>
-                <p>
+                </HomeTitle>
+                <HomeSubTitle>
                   Believe it or not, we take special care of every seeds &
                   plants. We believe the special care is important for the love
                   and care to be appreciated.
-                </p>
+                </HomeSubTitle>
               </HomeImageText>
             </div>
           </div>
           <div id='slide-5'>
-            <img src={fe} alt='fe-img' />
+            <img src={ fe } alt='fe-img' />
             <div className='overlay'>
               <HomeImageText>
-                <h1>
+                <HomeTitle>
                   Customer support from the <span>Farm</span>
-                </h1>
-                <p>
+                </HomeTitle>
+                <HomeSubTitle>
                   Our experienced Field Engineers are always ready to assist.
                   Both on the field and off the field.
-                </p>
+                </HomeSubTitle>
               </HomeImageText>
             </div>
           </div>
         </div>
       </div>
-      <div style={{ textAlign: 'center' }}>
+      <div style={ { textAlign: 'center' } }>
         <a href='#slide-1'>
           <span className='dot'></span>
         </a>

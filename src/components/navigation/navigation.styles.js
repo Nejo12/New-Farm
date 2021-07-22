@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const NaviContainer = styled.div`
-  background-color: #333; /* Black background color */
-  position: fixed; /* Make it stick/fixed */
-  top: 0; /* Stay on top */
-  width: 100%; /* Full width */
-  transition: top 0.5s; /* Transition effect when sliding down (and up) */
+  background-color: #fff; 
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  transition: top 0.5s; 
   z-index: 99;
 `;
 
@@ -14,7 +14,7 @@ export const StyledNaviContent = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
-  color: greenyellow;
+  color: green;
 
   img {
     width: 40px;
@@ -73,6 +73,7 @@ export const OptionLink = styled(Link)`
   color: green;
   padding: 0 10px;
   cursor: pointer;
+  font-size: 24px;
 
   &:hover {
     color: greenyellow;
