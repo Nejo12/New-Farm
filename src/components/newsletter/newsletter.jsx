@@ -4,6 +4,7 @@ import {
   NewsLetterContainer,
   NewsLetterContent,
   NewsLetterForm,
+  NewsLetterInput
 } from './newsletter.styles';
 
 const Newsletter = () => {
@@ -12,7 +13,7 @@ const Newsletter = () => {
       <NewsLetterContent>
         <p>Sign up for updates and more through our Weekly Newsletter</p>
         <NewsLetterForm>
-          <input type='email' placeholder='Enter your email address' />
+          <NewsLetterInput type='email' placeholder='Enter your email address' />
           <CustomButton text='Submit' />
         </NewsLetterForm>
       </NewsLetterContent>

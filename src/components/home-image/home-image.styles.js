@@ -70,48 +70,38 @@ export const HomeImageContainer = styled.div`
 export const HomeImageText = styled.div`
   position: absolute;
   min-height: 10rem;
-  min-width: 90vmin;
+  min-width: 90%;
   color: #fff;
   margin: 20px;
   padding: 10px 30px;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: start;
 
-  h1 {
-    font-size: 2rem;
-  }
-
-  span {
-    color: green;
-    font-size: 5vmin;
-    text-shadow: 2px 2px #fff;
-  }
-
-  p {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-  }
-
-  @media screen and (max-width: 900px) {
-    min-height: 20px;
-    margin: auto;
-    padding: 10px;
-    h1 {
-      font-size: 1.5rem;
-    }
-
-    span {
-      color: lightgreen;
-      font-size: 2rem;
-    }
-    p {
-      font-size: 1rem;
-    }
-  }
-
   @media screen and (max-width: 500px) {
     width: 90%;
+  }
+`;
+
+export const HomeTitle = styled.h1`
+    font-size: 7vw;
+    font-family: 'Noto Serif', serif;
+    margin-bottom: 0;
+
+    span {
+    color: green;
+    text-shadow: 2px 2px #fff;
+  }
+`;
+
+export const HomeSubTitle = styled.p`
+    max-width: 70%;
+    font-size: 28%;
+    line-height: 2.5rem;
+    letter-spacing: 3px;
+
+  @media screen and (max-width: 900px) {
+    max-width: 100%;
   }
 `;

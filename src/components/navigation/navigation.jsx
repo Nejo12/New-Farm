@@ -43,23 +43,23 @@ const Navigation = ({ currentUser, hidden, clearCart }) => {
               alt='nav-logo'
             />
           </LogoContainer>
-          {currentUser ? (
+          { currentUser ? (
             currentUser.photoURL ? (
               <img
-                style={{
+                style={ {
                   width: '40px',
                   height: '40px',
                   borderRadius: '50%',
-                  border: '2px solid #fff',
+                  border: '2px solid green',
                   marginTop: '20px',
-                }}
-                src={currentUser.photoURL}
+                } }
+                src={ currentUser.photoURL }
                 alt='user-display'
               />
             ) : (
-              <p className='capitalize'> Hi, {currentUser.displayName}</p>
+              <p className='capitalize'> Hi, { currentUser.displayName }</p>
             )
-          ) : null}
+          ) : null }
         </BrandLogo>
 
         <OptionsContainer>
@@ -67,25 +67,25 @@ const Navigation = ({ currentUser, hidden, clearCart }) => {
 
           <OptionLink to='/shop'>SHOP</OptionLink>
 
-          {currentUser ? (
+          { currentUser ? (
             <OptionLink
               to='/'
-              onClick={() => {
+              onClick={ () => {
                 auth.signOut();
                 clearCart();
                 toast.success('Signed Out Success.');
-              }}
+              } }
             >
               SIGN OUT
             </OptionLink>
           ) : (
             <OptionLink to='/signin'>SIGN IN</OptionLink>
-          )}
+          ) }
 
           <CartIcon />
         </OptionsContainer>
       </StyledNaviContent>
-      {hidden ? null : <CartDropdown />}
+      { hidden ? null : <CartDropdown /> }
     </NaviContainer>
   );
 };
