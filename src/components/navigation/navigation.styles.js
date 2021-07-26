@@ -59,7 +59,7 @@ export const OptionsContainer = styled.div`
   padding: 15px 50px;
 
   @media screen and (max-width: 850px) {
-    width: 70%;
+    width: 80%;
   }
 
   @media screen and (max-width: 450px) {
@@ -73,7 +73,7 @@ export const OptionLink = styled(Link)`
   color: green;
   padding: 0 10px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 18px;
 
   &:hover {
     color: greenyellow;
