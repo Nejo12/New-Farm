@@ -85,21 +85,24 @@ export const HomeImageText = styled.div`
 `;
 
 export const HomeTitle = styled.h1`
-    font-size: 7vw;
+    font-size: inherit;
     font-family: 'Noto Serif', serif;
     margin-bottom: 0;
-
     span {
     color: green;
     text-shadow: 2px 2px #fff;
+  }
+
+   @media screen and (max-width: 700px) {
+    font-size: 40%;
   }
 `;
 
 export const HomeSubTitle = styled.p`
     max-width: 70%;
-    font-size: 28%;
-    line-height: 2.5rem;
-    letter-spacing: 3px;
+    font-size: 24px;
+    line-height: 2rem;
+    letter-spacing: 2px;
 
   @media screen and (max-width: 900px) {
     max-width: 100%;

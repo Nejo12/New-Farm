@@ -21,7 +21,7 @@ export const MessageInfo = styled.p`
   margin: 1rem auto;
   padding: 1rem;
   width: 70%;
-  text-align: justify;
+  text-align: center;
 
   @media screen and (max-width: 900px) {
     width: 100%;
