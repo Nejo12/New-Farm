@@ -2,16 +2,7 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
-const config = {
-  apiKey: "AIzaSyCZoSGSJicaK9CuthGIv0K5n17bOr9LKmM",
-  authDomain: "the-farm-223df.firebaseapp.com",
-  databaseURL: "https://the-farm-223df.firebaseio.com",
-  projectId: "the-farm-223df",
-  storageBucket: "the-farm-223df.appspot.com",
-  messagingSenderId: "1061647793143",
-  appId: "1:1061647793143:web:00780a2ea626e3d5ca4cf2",
-  measurementId: "G-NKPNKR7JKP"
-};
+import firebaseConfig from "../config"
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) {
@@ -37,7 +28,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         ...additionalData
       });
     } catch (error) {
-      console.log("error rcreating user: ", error.message);
+      console.error("error recreating user: ", error.message);
     }
   }
 
@@ -49,12 +40,10 @@ export const addCollectionAndDocuments = async (
   objectsToAdd
 ) => {
   const collectionRef = firestore.collection(collectionKey);
-  // console.log(collectionRef);
 
   const batch = firestore.batch();
   objectsToAdd.forEach(obj => {
     const newDocRef = collectionRef.doc();
-    // console.log(newDocRef);
     batch.set(newDocRef, obj);
   });
 
@@ -73,14 +62,13 @@ export const convertCollectionsSnapshotToMap = collections => {
       items
     };
   });
-  // console.log(transformedCollection);
   return transformedCollection.reduce((accumulator, collection) => {
-    accumulator[collection.title.toLowerCase()] = collection;
+    accumulator[ collection.title.toLowerCase() ] = collection;
     return accumulator;
   }, {});
 };
 
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
