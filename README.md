@@ -63,3 +63,4 @@ View and enjoy the functionality :wink: .
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e7408072-1efe-47cd-b4a9-1fa897bd68e6/deploy-status)](https://app.netlify.com/sites/thefarm/deploys)
 
 Deployed to [netlify](https://thefarm.netlify.com/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e7408072-1efe-47cd-b4a9-1fa897bd68e6/deploy-status)](https://app.netlify.com/sites/thefarm/deploys)
