@@ -8,7 +8,7 @@ export const CollectionItemContainer = styled.div`
   align-items: center;
   width: 22vw;
   height: 450px;
-  margin: 10px 5px;
+  margin: 5px;
   padding: 0.5rem;
   border: 1px solid silver;
   border-radius: 4px;

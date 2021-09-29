@@ -13,15 +13,14 @@ export const CollectionPreviewContainerStyles = styled.div`
 export const CollectionPreviewTitleStyles = styled.h1`
   font-size: 28px;
   font-weight: 100;
-  margin-top: 25px;
-  margin-bottom: auto;
+  margin: 25px auto 0;
   cursor: pointer;
   text-align: center;
   color: green;
-  padding: 0;
+  padding: 5px 10px;
 
   &:hover {
-    color: grey;
+      :before {content:"VIEW MORE "}
   }
 `;
 
