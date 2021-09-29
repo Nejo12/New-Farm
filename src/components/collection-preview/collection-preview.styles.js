@@ -14,6 +14,7 @@ export const CollectionPreviewTitleStyles = styled.h1`
   font-size: 28px;
   font-weight: 100;
   margin-top: 25px;
+  margin-bottom: auto;
   cursor: pointer;
   text-align: center;
   color: green;
