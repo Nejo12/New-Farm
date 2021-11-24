@@ -7,10 +7,12 @@ export const CollectionContainerStyles = styled.div`
 `;
 
 export const CollectionTitleStyles = styled.h2`
-  font-size: 38px;
-  margin: 0 auto;
-  text-transform: capitalize;
-  font-weight: 100;
+    font-size: 28px;
+    font-weight: 100;
+    margin: 25px auto 0px;
+    text-align: center;
+    color: green;
+    padding: 5px 10px;
 `;
 
 export const CollectionItemsStyles = styled.div`

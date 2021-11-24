@@ -15,11 +15,11 @@ const Collection = ({ collection }) => {
   const { title, items } = collection;
   return (
     <CollectionContainerStyles>
-      <CollectionTitleStyles>{title}</CollectionTitleStyles>
+      <CollectionTitleStyles>{ title.toUpperCase() }</CollectionTitleStyles>
       <CollectionItemsStyles>
-        {items.map(item => (
-          <CollectionItem key={item.id} item={item} />
-        ))}
+        { items.map(item => (
+          <CollectionItem key={ item.id } item={ item } />
+        )) }
       </CollectionItemsStyles>
     </CollectionContainerStyles>
   );
