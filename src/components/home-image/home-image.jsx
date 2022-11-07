@@ -1,4 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+import { selectCurrentUser } from '../../redux/user/user.selectors';
+
 import joes from '../../media/joe-farm.jpg';
 import sam from '../../media/sam.jpg';
 import seed from '../../media/seed.jpg';
@@ -6,7 +10,7 @@ import fe from '../../media/fe.jpg';
 
 import { HomeImageContainer, HomeImageText, HomeTitle, HomeSubTitle } from './home-image.styles';
 
-const HomeImage = () => {
+const HomeImage = ({ currentUser }) => {
   return (
     <HomeImageContainer>
       <div className='slider'>
@@ -16,7 +20,8 @@ const HomeImage = () => {
             <div className='overlay'>
               <HomeImageText>
                 <HomeTitle>
-                  Welcome to the <span>Farm</span>
+                  { currentUser?.displayName ? `Hey ${currentUser?.displayName.split(' ')[ 1 ]}, welcome back ` : `Welcome ` }
+                  to the <span>Farm</span>
                 </HomeTitle>
                 <HomeSubTitle>
                   With an ever increasing demand for fresh produce, we supply the
@@ -109,4 +114,8 @@ const HomeImage = () => {
   );
 };
 
-export default HomeImage;
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+});
+
+export default connect(mapStateToProps, null)(HomeImage);

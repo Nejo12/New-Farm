@@ -18,6 +18,7 @@ import {
   OptionsContainer,
   OptionLink,
   BrandLogo,
+  StyleBtnUp
 } from './navigation.styles';
 
 const Navigation = ({ currentUser, hidden, clearCart }) => {
@@ -31,10 +32,24 @@ const Navigation = ({ currentUser, hidden, clearCart }) => {
       document.getElementById('navbar').style.top = '-90px';
     }
     prevScrollpos = currentScrollPos;
+
+    if (document.documentElement.scrollTop > 1400) {
+      document.querySelector('.scrollToTop').style.display = 'block';
+    }
+    else {
+      document.querySelector('.scrollToTop').style.display = 'none';
+    }
   };
+
+  const scrollToTop = () => {
+    setTimeout(() => {  // use timeout to work in safari 
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100)
+  }
 
   return (
     <NaviContainer id='navbar'>
+      <StyleBtnUp onClick={ scrollToTop } className="scrollToTop">Top</StyleBtnUp>
       <StyledNaviContent>
         <BrandLogo>
           <LogoContainer to='/'>
@@ -43,8 +58,8 @@ const Navigation = ({ currentUser, hidden, clearCart }) => {
               alt='nav-logo'
             />
           </LogoContainer>
-          { currentUser ? (
-            currentUser.photoURL ? (
+          { currentUser?.photoURL ? (
+            currentUser?.photoURL ? (
               <img
                 style={ {
                   width: '40px',
@@ -55,6 +70,7 @@ const Navigation = ({ currentUser, hidden, clearCart }) => {
                 } }
                 src={ currentUser.photoURL }
                 alt='user-display'
+                referrerPolicy="no-referrer"
               />
             ) : (
               <p className='capitalize'> Hi, { currentUser.displayName }</p>

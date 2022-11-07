@@ -10,10 +10,13 @@ import Newsletter from '../../components/newsletter/newsletter';
 const Home = () => (
   <StyledHome>
     <HomeImage />
-    <CustomMessage />
+    <CustomMessage title="100% Fresh. 100% Local." info='Your food should not travel too far to get to you fresh. With The Farm,
+        you can have every fresh produce grown close to you. Nutritious produce
+        from all around the world, right there close to you while it still
+        alive.' />
     <Directory />
     <Newsletter />
   </StyledHome>
-);
+)
 
 export default Home;

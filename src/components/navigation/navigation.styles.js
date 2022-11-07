@@ -79,3 +79,15 @@ export const OptionLink = styled(Link)`
     color: greenyellow;
   }
 `;
+
+export const StyleBtnUp = styled.button`
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 50px;
+height: 50px;
+border: 0;
+border-radius: 4px;
+cursor: pointer;
+transition: opacity 2250ms ease-in-out;
+`
