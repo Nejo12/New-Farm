@@ -33,7 +33,7 @@ export const CollectionPreviewStyles = styled.div`
     grid-gap: 5px;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     grid-template-columns: 1fr;
   }
 `;
