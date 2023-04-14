@@ -18,6 +18,7 @@ export const CollectionPreviewTitleStyles = styled.h1`
   text-align: center;
   color: green;
   padding: 5px 10px;
+  /* border: 1px solid red; */
 
   &:hover {
       :before {content:"VIEW MORE "}
@@ -33,7 +34,7 @@ export const CollectionPreviewStyles = styled.div`
     grid-gap: 5px;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     grid-template-columns: 1fr;
   }
 `;

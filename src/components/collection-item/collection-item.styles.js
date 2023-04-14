@@ -9,7 +9,6 @@ export const CollectionItemContainer = styled.div`
   width: 22vw;
   height: 450px;
   margin: 5px;
-  padding: 0.5rem;
   border: 1px solid silver;
   border-radius: 4px;
   background: #deeadf;
@@ -19,14 +18,14 @@ export const CollectionItemContainer = styled.div`
   }
 
   @media screen and (max-width: 520px) {
-    width: 80vw;
+    width: 100%;
   }
 `;
 
 export const AddButton = styled(CustomButton)`
   width: 80%;
   opacity: 0.7;
-  margin-top: 5rem;
+  margin: 32px 16px 0 ;
   border-radius: 4px;
 
   @media screen and (max-width: 1380px) {
